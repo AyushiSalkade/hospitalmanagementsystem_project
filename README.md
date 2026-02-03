@@ -1,34 +1,48 @@
 
-##🏥  Online Hospital Management System
+# 🏥 Online Hospital Management System
 
-An Online Hospital Management System designed to manage hospital operations digitally and efficiently. This project helps hospitals handle patient records, appointments, doctors, and administrative tasks through a user‑friendly web interface.
+**An Online Hospital Management System designed to manage hospital operations digitally and efficiently. This project helps hospitals handle patient records, appointments, doctors, and administrative tasks through a user-friendly web interface.**
 
-##🚀 Project Overview
+## 🚀 Project Overview
 
 This system is built as a web-based application using HTML, CSS, JavaScript, PHP, and MySQL. It aims to reduce paperwork, save time, and improve data accuracy by maintaining all hospital-related information in a centralized database.
 
-##✨ Features
+## ✨ Features
 
-👤 Patient Management – Add, update, view, and delete patient records
+- **👤 Patient Management** – Add, update, view, and delete patient records
+- **🧑‍⚕️ Doctor Management** – Manage doctor details and availability
+- **📅 Appointment Scheduling** – Book and manage appointments online
+- **🔐 Admin Panel** – Secure admin login to manage the system
+- **📂 Medical Records** – Store and access patient medical history
+- **📊 Dashboard** – Easy overview of hospital activities
 
-🧑‍⚕️ Doctor Management – Manage doctor details and availability
+## 🛠️ Technologies Used
 
-📅 Appointment Scheduling – Book and manage appointments online
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** PHP  
+- **Database:** MySQL  
+- **Server:** XAMPP / WAMP (Apache & MySQL)
 
-🔐 Admin Panel – Secure admin login to manage the system
+📁 online-hospital-management-system
+├──  index.php
+├──  admin.php
+├──  login.php
+├──  logout.php
+├──  doctor_dashboard.php
+├──  patient_dashboard.php
+├──  appointmentbook.php
+├──  viewappointment.php
+├──  config.php
+├──  css
+│   ├──  style.css
+│   └──  login.css
+├──  js
+│   └──  home.js
+├──  pages
+│   ├──  about.html
+│   ├──  doctorreg.html
+│   └──  patientreg1.html
+└──  README.md
 
-📂 Medical Records – Store and access patient medical history
 
-📊 Dashboard – Easy overview of hospital activities
-
-
-##🛠️  Technologies Used
-
-Frontend: HTML, CSS, JavaScript
-
-Backend: PHP
-
-Database: MySQL
-
-Server: XAMPP / WAMP (Apache & MySQL)
-
+   
