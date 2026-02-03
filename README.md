@@ -33,6 +33,4 @@ Server: XAMPP / WAMP (Apache & MySQL)
 
 
 
----
 
-⭐ If you like this project, don’t forget to give it a star on GitHub!
