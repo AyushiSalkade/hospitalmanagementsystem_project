@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+body{
+    height: 100px;
+    display:flex;
+    align-items: centre;
+    justify-content: center;
+}
+
+.container{
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    background-color: #003b5b;
+}
+
+h4{
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    /*border:none;
+    border-radius: 5px;
+    font-size: 18px;*/
+}
+input::placeholder ,
+textarea::placeholder {
+    color: black;
+}
+
+
+
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    color: black;
+}
+
+#submit{
+    border: none;
+    background-color: orangered;
+    color: white;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#submit:hover{
+background-color: #333333;
+}
+/* Add this to fix the spacing issue 
+label {
+   display: block;
+   margin-top: 10px;
+   color: white;
+}*/

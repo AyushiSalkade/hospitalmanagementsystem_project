@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-C<ompatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="gogglesheet.css">-->
+    <title>Patient Registration</title>
+    
+</head>
+<body>
+    <div class="container">
+    <form method="POST" action="patient.php" autocomplete="off" onsubmit="return validation()" name="patients">
+        <h4>Patient Registeration</h4>
+        <input type="text" id="p_name" name="p_name" placeholder="Name" >
+        <!--<select id="gender" name="your-gender" required>
+         <option value="">Select Gender</option>
+         <option value="Male">Male</option>
+         <option value="Female">Female</option>
+        </select><br>-->
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <input type="number" id="age" name="age" placeholder="Age" required>
+        <input type="number" id="phoneno" name="phoneno" placeholder="Phone no" required>
+        <input type="text" id="email" name="email" placeholder="Email" required>
+        <input type="text" id="address" name="address" placeholder="Address" required>
+        <input type="text" id="patient_history" name="patient_history" placeholder="Patient History">
+        <input type="text" id="password" name="password" placeholder="Password" required>
+        <input type="submit" value="submit" id="submit">
+    </form>
+    </div>
+</body>
+</html>
+<style>
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+body{
+    height: 100px;
+    display:flex;
+    align-items: centre;
+    justify-content: center;
+}
+
+.container{
+    width: 500px;
+    padding: 30px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    background-color: #003b5b;
+}
+
+h4{
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+select{
+    color:grey;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+}
+
+#submit{
+    border: none;
+    background-color: orangered;
+    color: white;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#submit:hover{
+background-color: #333333;
+}
+</style>
+<script>
+    function validation(){
+        var user_data = document.getElementById('p_name').value;
+        if(user_data==""){
+            alert("Please enter data");
+            return false;
+        }
+            
+        
+    }
+    </script>

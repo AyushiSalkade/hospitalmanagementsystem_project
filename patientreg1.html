@@ -1,0 +1,122 @@
+<!--patientreg1.html , php filename = patient.php-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="gogglesheet.css">-->
+    <title>Patient Registration</title>
+    <!--<script>
+        function validation(){
+            var name = document.getElementById('p_name').value;
+            var pattern = /^[A-Za-z\s]{2,}$/;
+            const phone = document.getElementById('phoneno').value;*/
+            if(!pattern.test(name)){
+                alert("Please enter a valid name only letters and spaces (minimum 2 characters long).");
+                return false;
+            }
+           /* if(phone.length !== 10 || !/^\d+$/.test(phone)){
+                alert("Phone number must be exactlt 10 digit.");
+                return false;
+           }*/
+            return true;
+        }
+        </script>-->
+</head>
+<body>
+    <div class="container">
+    <form method="POST" action="patient.php" autocomplete="off"   name="patients">
+        <h4>Patient Registeration</h4>
+        <input type="text" id="p_name" name="p_name" placeholder="Name" required pattern="[A-Za-z\s]+"
+        title="Name should contain only letters and spaces (minimum 2 characters)">
+        <!--<select id="gender" name="your-gender" required>
+         <option value="">Select Gender</option>
+         <option value="Male">Male</option>
+         <option value="Female">Female</option>
+        </select><br>-->
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <input type="number" id="age" name="age" placeholder="Age" required>
+        <input type="tel" id="phoneno" name="phoneno" placeholder="Phone no" required pattern="[6-9][0-9]{9}"
+        maxlength="10"
+        title="Enter a valid 10-digit number starting from 6 to 9">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="text" id="address" name="address" placeholder="Address" required>
+        <input type="text" id="patient_history" name="patient_history" placeholder="Patient History">
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="submit" value="submit" id="submit">
+    </form>
+    </div>
+</body>
+</html>
+<style>
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+body{
+    height: 100px;
+    display:flex;
+    align-items: centre;
+    justify-content: center;
+}
+
+.container{
+    width: 500px;
+    padding: 30px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    background-color: #003b5b;
+}
+
+h4{
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+select{
+    color:grey;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+}
+
+#submit{
+    border: none;
+    background-color: orangered;
+    color: white;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#submit:hover{
+background-color: #333333;
+}
+</style>

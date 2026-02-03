@@ -1,0 +1,64 @@
+<!--doctorreg.html , php filename = doccon.php-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gogglesheet.css">
+    <title>DOCTOR REGISTRATION</title>
+    <script>
+        function validation(){
+            const name = document.getElementById('D_name').value;
+            const phone = document.getElementById('contactno').value;
+            if(name.length < 2){
+                alert("Name must be at least 2 character long");
+                return false;
+            }
+            /*if(phone.length !== 10 || !/^\d+$/.test(phone)){
+                alert("Phone number must be exactlt 10 digit.");
+                return false;
+            }*/
+            return true;
+        }
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" action="doccon.php" autocomplete="off" onsubmit="return validation()">
+            <h4>Doctor Registration</h4>
+            <!--<input type="number" id="did" name="did" placeholder="ID" required>-->
+            <input type="text" id="D_name" name="D_name" placeholder="Name" required>
+            <input type="text" id="age" name="age" placeholder="Age" required>
+            <input type="tel" id="contactno" name="contactno" placeholder="Contact No" required pattern="[6-9][0-9]{9}"
+            maxlength="10"
+            title="Enter a valid 10-digit number starting from 6 to 9">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br>
+            <select id="specialization" name="specialization" placeholder="Specialization" required>
+                <option value="">Select Specialization</option>
+                <option value="Cardiologist">Cardiologist</option>
+                <option value="Neurologist">Neurologist</option>
+                <option value="Pediatrician">Pediatrician</option>
+                <option value="Gynecologist">Gynecologist</option>
+                <option value="ENT Specialist">ENT Specialist</option>
+                <option value="Surgeon">Surgeon</option>
+                <option value="Dermatologist">Dermatologist</option>
+                <option value="Psychiatrist">Psychiatrist</option>
+            </select><br>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="submit" value="submit" id="submit">
+        </form>
+        
+    </div>
+</body>
+
+</html>
+<style>
