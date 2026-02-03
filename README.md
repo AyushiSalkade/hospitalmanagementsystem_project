@@ -1,13 +1,13 @@
 
-🏥 ## Online Hospital Management System
+##🏥  Online Hospital Management System
 
 An Online Hospital Management System designed to manage hospital operations digitally and efficiently. This project helps hospitals handle patient records, appointments, doctors, and administrative tasks through a user‑friendly web interface.
 
-🚀## Project Overview
+##🚀 Project Overview
 
 This system is built as a web-based application using HTML, CSS, JavaScript, PHP, and MySQL. It aims to reduce paperwork, save time, and improve data accuracy by maintaining all hospital-related information in a centralized database.
 
-✨## Features
+##✨ Features
 
 👤 Patient Management – Add, update, view, and delete patient records
 
@@ -22,7 +22,7 @@ This system is built as a web-based application using HTML, CSS, JavaScript, PHP
 📊 Dashboard – Easy overview of hospital activities
 
 
-🛠️ ## Technologies Used
+##🛠️  Technologies Used
 
 Frontend: HTML, CSS, JavaScript
 
